@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/layoutTelaPrincipal"
+    tools:context=".MainActivity">
+
+    <TextView android:text="Informe o primeiro número"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLabel1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editNumero1"
+        android:layout_below="@+id/textLabel1"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe o segundo número"
+        android:id="@+id/textLabel2"
+        android:layout_below="@+id/editNumero1"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editNumero2"
+        android:layout_below="@+id/textLabel2"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/btSomar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editNumero2"
+        android:onClick="buttonOperacaoOnClick"
+        android:text="Somar" />
+
+    <Button
+        android:id="@+id/btSubtrair"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btSomar"
+        android:onClick="buttonOperacaoOnClick"
+        android:text="Subtrair" />
+
+    <Button
+        android:id="@+id/btMultiplicar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btSubtrair"
+        android:onClick="buttonOperacaoOnClick"
+        android:text="Multiplicar" />
+
+    <Button
+        android:id="@+id/btDividir"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btMultiplicar"
+        android:onClick="buttonOperacaoOnClick"
+        android:text="Dividir" />
+
+</RelativeLayout>
